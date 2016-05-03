@@ -1,7 +1,0 @@
-{
-	"Kind": "TSQLDBFireDACConnectionProperties",
-	"ServerName": "MySQL",
-	"DatabaseName": "DataBase",
-	"User": "root",
-	"Password": "senha"
-}
