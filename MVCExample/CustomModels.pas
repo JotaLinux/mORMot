@@ -78,13 +78,11 @@ type
     fErros: Int64;
     fReleaseNotes: RawUTF8;
     fTemtabelaCom: Int64;
-    fTemSUPERNOVA: Int64;
     fTemROBO: Int64;
     fTemQUERY: Int64;
     fTemIMAGEM: Int64;
     fTemJS: Int64;
     fTipotabelaCom: Int64;
-    fTipoSUPERNOVA: Int64;
     fTipoROBO: Int64;
     fTipoQUERY: Int64;
     fTipoIMAGEM: Int64;
@@ -107,8 +105,6 @@ type
     property ReleaseNotes: RawUTF8 index 65535 read fReleaseNotes write fReleaseNotes;
     /// match releases.TemtabelaCom [int 1 0 0]
     property TemtabelaCom: Int64 read fTemtabelaCom write fTemtabelaCom;
-    /// match releases.TemSUPERNOVA [int 1 0 0]
-    property TemSUPERNOVA: Int64 read fTemSUPERNOVA write fTemSUPERNOVA;
     /// match releases.TemROBO [int 1 0 0]
     property TemROBO: Int64 read fTemROBO write fTemROBO;
     /// match releases.TemQUERY [int 1 0 0]
@@ -119,8 +115,6 @@ type
     property TemJS: Int64 read fTemJS write fTemJS;
     /// match releases.TipotabelaCom [int 1 0 0]
     property TipotabelaCom: Int64 read fTipotabelaCom write fTipotabelaCom;
-    /// match releases.TipoSUPERNOVA [int 1 0 0]
-    property TipoSUPERNOVA: Int64 read fTipoSUPERNOVA write fTipoSUPERNOVA;
     /// match releases.TipoROBO [int 1 0 0]
     property TipoROBO: Int64 read fTipoROBO write fTipoROBO;
     /// match releases.TipoQUERY [int 1 0 0]
