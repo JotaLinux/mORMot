@@ -1,0 +1,7 @@
+{
+	"Kind": "TSQLDBFireDACConnectionProperties",
+	"ServerName": "MySQL",
+	"DatabaseName": "teleport",
+	"User": "root",
+	"Password": "YXR3L35CXO4="
+}

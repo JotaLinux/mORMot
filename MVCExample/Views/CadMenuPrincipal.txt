@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">    
+    <link rel="stylesheet" href=".static/jqwidgets/styles/jqx.base.css" type="text/css" />
+	<script type="text/javascript" src=".static/DataTable/jQuery-2.2.0/jquery-2.2.0.min.js"></script>	
+	<script type="text/javascript" src=".static/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src=".static/jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src=".static/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src=".static/jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src=".static/jqwidgets/jqxmenu.js"></script>
+    
+	<link href=".static/bootstrap.min.css" rel="stylesheet">
+  </head>
+<body>
+
+</body>

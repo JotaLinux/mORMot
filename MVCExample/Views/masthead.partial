@@ -1,0 +1,44 @@
+{{#main}}
+  <div id="menuData" style="visibility: hidden; display: none;">{{menu.items}}</div>
+  <div id="cotacaoData">{{CalculoItem}}</div>
+{{/main}}
+<div class="menu">  
+<nav> 
+	<div class="menu" id='jqxWidget'>
+        </div>
+        <script type="text/javascript">		
+            $(document).ready(function () {
+						var data =  $('#menuData').html(); 	
+						data =  JSON.parse(data.replace(/&quot;/g,'\"'));
+						var source =
+						{
+							datatype: "json",
+							datafields: [
+								{ name: 'id' },
+								{ name: 'parentid' },
+								{ name: 'text' },
+								{ name: 'subMenuWidth' },
+								{ name: 'url' }
+							],
+							id: 'id',
+							localdata: data
+						};
+						// create data adapter.
+						var dataAdapter = new $.jqx.dataAdapter(source);                
+						dataAdapter.dataBind();
+						var records = dataAdapter.getRecordsHierarchy('id', 'parentid', 'items', [{ name: 'text', map: 'label'},
+																								  {name: 'url', "map": 'value'}]);
+						$('#jqxWidget').jqxMenu({ source: records, height: 30,  width: '800px' });
+						$("#jqxWidget").on('itemclick', function (event) {
+							if(event.args.attributes['item-value'] != undefined){
+							  window.location.href = event.args.attributes['item-value'].nodeValue;
+							}                   
+						});				
+				
+				});                            
+        </script>
+ 
+        
+    </div>
+	
+</nav>	
